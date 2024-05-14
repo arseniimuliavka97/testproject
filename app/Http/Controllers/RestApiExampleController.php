@@ -6,10 +6,23 @@ use Illuminate\Http\Request;
 
 class RestApiExampleController extends Controller
 {
-    public function getAllEmployees()
+    public function index()
     {
-        $url = 'https://dummy.restapiexample.com/api/v1/employees';
-        $response = file_get_contents($url);
-        return $response;
+        $employees = Employee::all();
+        $transformedEmployees = $employees->map(function ($employee) {
+            return [
+                'id' => $employee->id,
+                'employee_name' => $employee->name,
+                'employee_salary' => $employee->salary,
+                'employee_age' => $employee->age,
+                'profile_image' => ""
+            ];
+        });
+        $response = [
+            'status' => 'success',
+            'data' => $transformedEmployees
+        ];
+        return response()->json($response);
     }
 }
+
