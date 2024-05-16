@@ -25,4 +25,4 @@ jobs:
 
       - name: Run PHP_CodeSniffer
         run: php phpcs.phar -h
-        working-directory: ${{ .github/workflows/.phpcs.xml }}
+        working-directory: ${{ github.workspace }}
