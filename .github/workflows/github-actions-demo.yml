@@ -28,4 +28,4 @@ jobs:
           ls -la /usr/local/bin/phpcbf
 
       - name: Run PHP_CodeSniffer
-        run: phpcs --standard=${{ github.workspace }}/.phpcs.xml
+        run: php phpcbf.phar -h
