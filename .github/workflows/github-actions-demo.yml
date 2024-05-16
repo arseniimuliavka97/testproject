@@ -24,6 +24,8 @@ jobs:
           chmod +x phpcbf.phar
           sudo mv phpcs.phar /usr/local/bin/phpcs
           sudo mv phpcbf.phar /usr/local/bin/phpcbf
+          ls -la /usr/local/bin/phpcs
+          ls -la /usr/local/bin/phpcbf
 
       - name: Run PHP_CodeSniffer
         run: php phpcs.phar -h
