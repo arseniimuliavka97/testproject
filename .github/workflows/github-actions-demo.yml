@@ -25,4 +25,4 @@ jobs:
             sudo mv phpcs.phar /usr/local/bin/phpcs
             sudo mv phpcbf.phar /usr/local/bin/phpcbf
       - name: Run PHP_CodeSniffer
-         run: phpcs --standard=PSR12 app config database routes resources
+         run: .github/workflows/phpcs --standart=.phpcs.xml
