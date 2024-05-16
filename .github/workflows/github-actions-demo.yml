@@ -24,7 +24,7 @@ jobs:
           chmod +x phpcbf.phar
 
       - name: Run PHP Code Beautifier and Fixer(PHPCBF)
-         run: ./php phpcbf.phar --standard=.phpcs.xml
+         run: php phpcbf.phar --standard=.phpcs.xml
 
       - name: Run PHP_CodeSniffer
         run: php phpcs.phar --standard=.phpcs.xml
