@@ -26,4 +26,4 @@ jobs:
           sudo mv phpcbf.phar /usr/local/bin/phpcbf
 
       - name: Run PHP_CodeSniffer
-        run: .github/workflows/phpcs --standard=.phpcs.xml
+        run: phpcs --standard=${{ github.workspace }}/.phpcs.xml
