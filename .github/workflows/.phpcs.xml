@@ -1,0 +1,12 @@
+<ruleset name="Laravel TestProject Coding Standards">
+<description>My Laravel TestProject Coding Standards</description>
+<rule ref="PSR12"/>
+<!--  Specify directories to be checked  -->
+<file>app</file>
+<file>config</file>
+<file>database</file>
+<file>routes</file>
+<file>resources</file>
+<!--  Exclude certain files or directories if needed  -->
+<exclude-pattern>vendor/*</exclude-pattern>
+</ruleset>
