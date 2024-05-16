@@ -25,4 +25,3 @@ class RestApiExampleController extends Controller
         return response()->json($response);
     }
 }
-

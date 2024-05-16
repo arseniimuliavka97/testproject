@@ -6,7 +6,7 @@ use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
-use Illuminate\Database\Schema\Blueprint; 
+use Illuminate\Database\Schema\Blueprint;
 
 class JobsTableSeeder extends Seeder
 {
@@ -15,8 +15,8 @@ class JobsTableSeeder extends Seeder
      */
     public function run()
     {
-     Schema::table('jobs', function (Blueprint $table) {
-    $table->timestamp('available_at')->useCurrent()->change();
-       });
+        Schema::table('jobs', function (Blueprint $table) {
+            $table->timestamp('available_at')->useCurrent()->change();
+        });
     }
 }
