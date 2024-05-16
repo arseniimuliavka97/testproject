@@ -22,10 +22,6 @@ jobs:
           curl -OL https://squizlabs.github.io/PHP_CodeSniffer/phpcbf.phar
           chmod +x phpcs.phar
           chmod +x phpcbf.phar
-          sudo mv phpcs.phar /usr/local/bin/phpcs
-          sudo mv phpcbf.phar /usr/local/bin/phpcbf
-          ls -la /usr/local/bin/phpcs
-          ls -la /usr/local/bin/phpcbf
 
       - name: Run PHP_CodeSniffer
         run: php phpcbf.phar -h
