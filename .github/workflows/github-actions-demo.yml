@@ -12,12 +12,8 @@ jobs:
         uses: actions/checkout@v4
       - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
       - run: echo "🖥️ The workflow is now ready to test your code on the runner."
-      - name: List files in the repository
-        run: |
-          ls ${{ github.workspace }}
-      - run: echo "🍏 This job's status is ${{ job.status }}."
       - name: download and install PHP_CodeSniffer
-         run: |
+        run: |
             curl -OL https://squizlabs.github.io/PHP_CodeSniffer/phpcs.phar
             curl -OL https://squizlabs.github.io/PHP_CodeSniffer/phpcbf.phar
             chmod +x phpcs.phar
@@ -25,4 +21,4 @@ jobs:
             sudo mv phpcs.phar /usr/local/bin/phpcs
             sudo mv phpcbf.phar /usr/local/bin/phpcbf
       - name: Run PHP_CodeSniffer
-         run: .github/workflows/phpcs --standart=.phpcs.xml
+         run: .github/workflows/phpcs --standard=.phpcs.xml
