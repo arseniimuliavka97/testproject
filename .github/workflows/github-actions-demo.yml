@@ -16,3 +16,5 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
+      - name: run PHP_CodeSniffer
+         run: phpcs --standart=.phpcs.xml
