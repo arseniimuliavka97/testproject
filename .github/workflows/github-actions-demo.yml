@@ -8,7 +8,7 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
 
     - name: Set up PHP
       uses: shivammathur/setup-php@v2
@@ -25,4 +25,4 @@ jobs:
         sudo mv phpcbf.phar /usr/local/bin/phpcbf
 
     - name: Run PHP_CodeSniffer
-      run: phpcs --standard=PSR12 app config database routes resources
+      run: .github/workflows/phpcs --standard=.phpcs.xml
