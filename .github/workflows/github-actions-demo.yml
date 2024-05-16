@@ -24,5 +24,4 @@ jobs:
           chmod +x phpcbf.phar
 
       - name: Run PHP_CodeSniffer
-        run: phpcs --standard=.phpcs.xml
-        working-directory: ${{ github.workspace }}
+        run: phpcs app
