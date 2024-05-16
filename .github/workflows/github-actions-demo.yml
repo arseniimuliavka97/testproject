@@ -24,4 +24,4 @@ jobs:
           chmod +x phpcbf.phar
 
       - name: Run PHP_CodeSniffer
-        run: phpcbf app
+        run: phpcs /.github/workflows/.phpcs.xml
