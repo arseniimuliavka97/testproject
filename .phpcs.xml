@@ -12,4 +12,5 @@
 
     <!-- Exclude certain files or directories if needed -->
     <exclude-pattern>vendor/*</exclude-pattern>
+    <exclude-pattern>*/tests/*</exclude-pattern>
 </ruleset>
