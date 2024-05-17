@@ -5,6 +5,7 @@
     <!-- Additional custom rules -->
     <rule ref="Squiz.Functions.GlobalFunction"/>
     <rule ref="Generic.Arrays.DisallowLongArraySyntax"/>
+    <rule ref="Generic.Formatting.SpaceAfterCast">
 
     <!-- Specify directories to be checked -->
     <file>app</file>
@@ -16,6 +17,4 @@
     <!-- Exclude certain files or directories if needed -->
     <exclude-pattern>vendor/*</exclude-pattern>
     <exclude-pattern>*/resources/views/*</exclude-pattern>
-    <rule ref="Generic.Formatting.SpaceAfterCast">
-        <severity>5</severity>
 </ruleset>
