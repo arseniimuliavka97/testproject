@@ -8,7 +8,6 @@
     <file>config</file>
     <file>database</file>
     <file>routes</file>
-    <file>resources</file>
 
     <!-- Exclude certain files or directories if needed -->
     <exclude-pattern>vendor/*</exclude-pattern>
