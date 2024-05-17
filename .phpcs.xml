@@ -2,10 +2,6 @@
 <ruleset name="Laravel TestProject Coding Standards">
     <description>My Laravel TestProject Coding Standards</description>
     <rule ref="PSR12"/>
-    <!-- Additional custom rules -->
-    <rule ref="Squiz.Functions.GlobalFunction"/>
-    <rule ref="Generic.Arrays.DisallowLongArraySyntax"/>
-    <rule ref="Generic.Formatting.SpaceAfterCast">
 
     <!-- Specify directories to be checked -->
     <file>app</file>
