@@ -10,7 +10,7 @@ Route::get('/user', function (Request $request) {
 Route::post('/submit', function (Request $request) {
     $user = $request->user();
     /*
-    dd($user); 
+    dd($user);
     dd($request->all());
     */
     return "Form submitted";
