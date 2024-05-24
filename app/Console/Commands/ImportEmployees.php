@@ -21,7 +21,7 @@ class ImportEmployees extends Command
      * @var string
      */
     protected $description = 'Imports employees from an external API';
-    
+
     public function __construct()
     {
         parent::__construct();
@@ -34,15 +34,15 @@ class ImportEmployees extends Command
         $client = new CLient();
         $response = $client->get('https://dummy.restapiexample.com/api/v1/employees');
         $data = \json_decode($response->getBody()->getContents(), true);
-        
+
         foreach ($data['data'] as $employeeData) {
-        Employee::create([
+            Employee::create([
             'employee_name' => $employeeData['employee_name'],
             'employee_salary' => $employeeData['employee_salary'],
             'employee_age' => $employeeData['employee_age'],
-         ]);
-      }
-      
-      $this->info('Employees imported succesfully');
+            ]);
+        }
+
+        $this->info('Employees imported succesfully');
     }
 }

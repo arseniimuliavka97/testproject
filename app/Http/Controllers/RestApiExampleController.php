@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Employee;
 
 class RestApiExampleController extends Controller
 {
@@ -25,4 +26,3 @@ class RestApiExampleController extends Controller
         return response()->json($response);
     }
 }
-

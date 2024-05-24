@@ -6,7 +6,6 @@ use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
-
 class EmployeesTableSeeder extends Seeder
 {
     /**
@@ -14,7 +13,7 @@ class EmployeesTableSeeder extends Seeder
      */
     public function run()
     {
-       DB::table('employees')->insert([
+        DB::table('employees')->insert([
             ['name' => 'Tiger Nixon', 'salary' => 320800, 'age' => 61],
             ['name' => 'Garrett Winters', 'salary' => 170750, 'age' => 63],
             ['name' => 'Ashton Cox', 'salary' => 86000, 'age' => 66],

@@ -13,6 +13,6 @@ class CacheTableSeeder extends Seeder
      */
     public function run()
     {
-    DB::table('cache')->delete();  // This deletes all data in the cache table
+        DB::table('cache')->delete();  // This deletes all data in the cache table
     }
 }
